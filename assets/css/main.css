@@ -37,6 +37,13 @@ body {
   color: var(--primary-font-color);
   overflow: auto;
 }
+body.light__theme{
+  color: var(--body-bg);
+  background-color: var(--primary-font-color);
+  a:not(.menu__ a){
+    color: black;
+  }
+}
 body.overflow{
   overflow: hidden;
 }
