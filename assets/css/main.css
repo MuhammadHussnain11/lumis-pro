@@ -512,6 +512,42 @@ h4{
 }
 /***** Get to know us page *****/
 /***** our philosophy page *****/ 
+
+.ph-sec__ .container{
+  position: relative;
+}
+.ph-sec__ .container .ph_sec__line{
+  width: 2px;
+  height: 80%;
+  top: -2%;
+  left: 50%;
+  position: absolute;
+  background: #fafffd10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.ph_sec__line a{
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--sec-color);
+  border-radius: 50%;
+  font-size: 1rem;
+  line-height: 16px;
+  color: var(--sec-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ph_sec__line a:hover,
+.ph_sec__line a.active{
+  transform: scale(1.2);
+  color: var(--primary-font-color);
+  background-color: var(--sec-color);
+  border: none;
+  opacity: 1 !important;
+}
 .method__results{
   background: rgba(255, 255, 255, 0.041);
   backdrop-filter: blur(15px);
@@ -839,7 +875,7 @@ height: 100%;
     padding: 20px;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1000px) {
   .menu__links{
     max-width: 500px;
   }
@@ -860,5 +896,17 @@ height: 100%;
   .s__box__2{
     height: auto;
   }
- 
+  .ph-sec__ .row{
+    padding-left: 10%;
+  } 
+  .ph-sec__ .container .ph_sec__line{
+    left: 25px;
+  }
+  .ph_sec__line a{
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 12px;
+  }
+
 }
