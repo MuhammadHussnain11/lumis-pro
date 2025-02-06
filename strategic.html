@@ -24,9 +24,9 @@
     <div id="wrapper">
 
         <!-- Start Header -->
-        <header class="header">
+        <header class="header" id="header">
             <div class="container">
-                <div class="position-relative d-flex py-5 align-items-center justify-content-center">
+                <div class="header__con">
                     <div class="menu__link"><a href="#" onclick="openMenu()">Menu</a></div>
                     <div class="logo__ imgBox">
                         <a href="./index.html">
@@ -34,12 +34,48 @@
                     </div>
                 </div>
             </div>
+            <nav>
+                <div class="menu__ bg__" id="menu__">
+                    <div class="container">
+                        <div class="header__con">
+                            <div class="menu__link"><a href="#" onclick="closeMenu()">Close</a></div>
+                            <div class="logo__ imgBox">
+                                <a href="./index.html">
+                                    <img src="./assets/images/logo.png" alt="logo"></a>
+                            </div>
+                        </div>
+                        <div class="menu__links">
+                            <ul>
+                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="./Get-To-Know-Us.html">Get to know us</a></li>
+                                <li><a href="./our-philosophy.html">OUR PHILOSOPHY IN ACTION</a></li>
+                                <li><a href="./strategic.html" class="active">STRATEGIC PLANNING & ADVISORY</a></li>
+                                <li><a href="./Mergers.html">Mergers and Acquisitions</a></li>
+                                <li><a href="./Business-continuity.html">Business Continuity and Risk
+                                        Management</a></li>
+                                <li><a href="./contact-us.html">get in touch</a></li>
+                            </ul>
+                            <div class="menu__details row py-4 g-4 align-items-center justify-content-between">
+                                <div class="col-md-5">
+                                    <h6>Address:</h6>
+                                    <a href="#">XCOMPANYADDRESSX</a>
+                                </div>
+                                <div class="col-md-5">
+                                    <h6>Email:</h6>
+                                    <a href="#">abcd@gmail.com</a>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </header>
         <!-- End Header -->
 
 
         <!-- Start Banner -->
-        <div class="banner__ bg__">
+        <div class="banner__">
             <div class="container">
                 <div class="heading__">
                     <h1>Unlock New Opportunities with a Clear Strategic Vision</h1>
@@ -54,7 +90,7 @@
         <!-- End Banner -->
 
         <!-- Start main -->
-        <main>
+        <main id="main">
 
             <section class="support__business">
                 <div class="container">
@@ -66,14 +102,14 @@
                                 initiative is aligned with long-term objectives. Effective strategic planning helps:
                             </p>
                             <ul class="check__circle__list">
-                                <li><i class="fa-regular fa-circle-check"></i>Foster organisational alignment</li>
+                                <li>Foster organisational alignment</li>
 
-                                <li><i class="fa-regular fa-circle-check"></i>Identify growth opportunities</li>
+                                <li>Identify growth opportunities</li>
 
-                                <li><i class="fa-regular fa-circle-check"></i>Mitigate risks with proactive strategies
+                                <li>Mitigate risks with proactive strategies
                                 </li>
 
-                                <li><i class="fa-regular fa-circle-check"></i>Maintain competitive positioning in
+                                <li>Maintain competitive positioning in
                                     evolving markets</li>
 
                             </ul>
@@ -136,7 +172,7 @@
                     </div>
                     <div class="row g-4">
                         <div class="col-xl-4">
-                            <div class="key__s__box key__s__box1 bg__"
+                            <div class="key__s__box key__s__box1 "
                                 style="background-image: url(./assets/images/young-team.png);">
                                 <h4>Tactical Analysis and Evaluation</h4>
                                 <p>We conduct in-depth assessments of your current market position and operational
@@ -147,7 +183,7 @@
                             </div>
                         </div>
                         <div class="col-xl-4">
-                            <div class="key__s__box key__s__box1 bg__"
+                            <div class="key__s__box key__s__box1 "
                                 style="background-image: url(./assets/images/Frame\ 1000000857.png);">
                                 <h4>Strategic Plan Development</h4>
                                 <p>Our team collaborates with you to create a comprehensive strategic plan tailored to
@@ -159,7 +195,7 @@
                         <div class="col-xl-4">
                             <div class="row flex-column g-4">
                                 <div class="col">
-                                    <div class="key__s__box key__s__box2 bg__"
+                                    <div class="key__s__box key__s__box2 "
                                         style="background-image: url(./assets/images/Group\ 35955.png);">
                                         <h4>Business Case Development</h4>
                                         <p>Shifts in strategic direction can be complex. We support you in building
@@ -169,7 +205,7 @@
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <div class="key__s__box key__s__box2 bg__"
+                                    <div class="key__s__box key__s__box2 "
                                         style="background-image: url(./assets/images/Group\ 35954.png);">
                                         <h4>Growth and Expansion Assessment</h4>
                                         <p>We help you explore organic growth avenues, new market entry strategies, and
@@ -181,7 +217,7 @@
                             </div>
                         </div>
                         <div class="col-xl-6">
-                            <div class="key__s__box key__s__box3 bg__"
+                            <div class="key__s__box key__s__box3 "
                                 style="background-image: url(./assets/images/Group\ 35952.png);">
                                 <h4>Stakeholder Alignment and Communication</h4>
                                 <p>Strategic success often hinges on aligning leadership and stakeholders with a shared
@@ -190,7 +226,7 @@
                             </div>
                         </div>
                         <div class="col-xl-6">
-                            <div class="key__s__box key__s__box3 bg__"
+                            <div class="key__s__box key__s__box3 "
                                 style="background-image: url(./assets/images/Group\ 35955\ \(1\).png);">
                                 <h4>Performance Monitoring and Adjustment</h4>
                                 <p>We stay engaged beyond planning, providing tools and frameworks for ongoing
@@ -259,14 +295,14 @@
                             <h1>Industry Applications</h1>
                             <p>Our strategic planning services benefit a wide range of industries, including:</p>
                             <ul class="check__circle__list">
-                                <li><i class="fa-regular fa-circle-check"></i>Technology</li>
+                                <li>Technology</li>
                                 <p>Guiding product innovation, scaling operations, and expanding into new markets.</p>
-                                <li><i class="fa-regular fa-circle-check"></i>Healthcare</li>
+                                <li>Healthcare</li>
                                 <p>Developing strategies for patient care improvements, regulatory compliance, and
                                     service expansion.</p>
-                                <li><i class="fa-regular fa-circle-check"></i>Retail</li>
+                                <li>Retail</li>
                                 <p>Enhancing customer engagement, operational efficiency, and market positioning.</p>
-                                <li><i class="fa-regular fa-circle-check"></i>Manufacturing</li>
+                                <li>Manufacturing</li>
                                 <p>Streamlining supply chains, optimising production processes, and mitigating
                                     operational risks.</p>
                             </ul>
@@ -321,43 +357,7 @@
             </div>
 
         </footer>
-        <div class="menu__ bg__" id="menu__">
-            <div class="container">
-                <div class="position-relative d-flex py-5 align-items-center justify-content-center">
-                    <div class="menu__link"><a href="#" onclick="closeMenu()">Close</a></div>
-                    <div class="logo__ imgBox">
-                        <a href="./index.html">
-                            <img src="./assets/images/logo.png" alt="logo"></a>
-                    </div>
-                </div>
-                <div class="menu__links">
-                    <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./Get-To-Know-Us.html">Get to know us</a></li>
-                        <li><a href="./our-philosophy.html">OUR PHILOSOPHY IN ACTION</a></li>
-                        <li><a href="./strategic.html" class="active">STRATEGIC PLANNING & ADVISORY</a></li>
-                        <li><a href="./Mergers.html">Mergers and Acquisitions</a></li>
-                        <li><a href="./Business-continuity.html">Business Continuity and Risk Management</a></li>
-                        <li><a href="./contact-us.html">get in touch</a></li>
-                    </ul>
-                    <div class="menu__details row py-4 g-4 align-items-center justify-content-between">
-                        <div class="col-md-5">
-                            <h6>Address:</h6>
-                            <a href="#">XCOMPANYADDRESSX</a>
-                        </div>
-                        <div class="col-md-5">
-                            <h6>Email:</h6>
-                            <a href="#">abcd@gmail.com</a>
-                        </div>
-
-                    </div>
-                </div>
-
-
-
-
-            </div>
-        </div>
+        
 
 
     </div>

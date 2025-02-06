@@ -24,9 +24,9 @@
     <div id="wrapper">
 
         <!-- Start Header -->
-        <header class="header">
+        <header class="header" id="header">
             <div class="container">
-                <div class="position-relative d-flex py-5 align-items-center justify-content-center">
+                <div class="header__con">
                     <div class="menu__link"><a href="#" onclick="openMenu()">Menu</a></div>
                     <div class="logo__ imgBox">
                         <a href="./index.html">
@@ -34,12 +34,48 @@
                     </div>
                 </div>
             </div>
+            <nav>
+                <div class="menu__ bg__" id="menu__">
+                    <div class="container">
+                        <div class="header__con">
+                            <div class="menu__link"><a href="#" onclick="closeMenu()">Close</a></div>
+                            <div class="logo__ imgBox">
+                                <a href="./index.html">
+                                    <img src="./assets/images/logo.png" alt="logo"></a>
+                            </div>
+                        </div>
+                        <div class="menu__links">
+                            <ul>
+                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="./Get-To-Know-Us.html">Get to know us</a></li>
+                                <li><a href="./our-philosophy.html" class="active">OUR PHILOSOPHY IN ACTION</a></li>
+                                <li><a href="./strategic.html">STRATEGIC PLANNING & ADVISORY</a></li>
+                                <li><a href="./Mergers.html">Mergers and Acquisitions</a></li>
+                                <li><a href="./Business-continuity.html">Business Continuity and Risk
+                                        Management</a></li>
+                                <li><a href="./contact-us.html">get in touch</a></li>
+                            </ul>
+                            <div class="menu__details row py-4 g-4 align-items-center justify-content-between">
+                                <div class="col-md-5">
+                                    <h6>Address:</h6>
+                                    <a href="#">XCOMPANYADDRESSX</a>
+                                </div>
+                                <div class="col-md-5">
+                                    <h6>Email:</h6>
+                                    <a href="#">abcd@gmail.com</a>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </header>
         <!-- End Header -->
 
 
         <!-- Start Banner -->
-        <div class="banner__ bg__">
+        <div class="banner__">
             <div class="container">
                 <div class="heading__">
                     <h1>Redefining Success with Innovative Strategies</h1>
@@ -53,19 +89,19 @@
         <!-- End Banner -->
 
         <!-- Start main -->
-        <main>
+        <main id="main">
 
 
 
             <section class="ph-sec__">
                 <div class="container">
-                    <div class="ph_sec__line">
-                        <a href="#" class="active"><i class="fa-solid fa-circle"></i></a>
+                    <!-- <div class="ph_sec__line"> -->
+                        <!-- <a href="#" class="active"><i class="fa-solid fa-circle"></i></a>
                         <a href="#"><i class="fa-solid fa-circle"></i></a>
                         <a href="#"><i class="fa-solid fa-circle"></i></a>
-                        <a href="#"><i class="fa-solid fa-circle"></i></a>
-                    </div>
-                    <div class="row py-5 flex-wrap-reverse g-4 align-items-center justify-content-between">
+                        <a href="#"><i class="fa-solid fa-circle"></i></a> -->
+                    <!-- </div> -->
+                    <div class="row flex-wrap-reverse ">
                         <div class="col-lg-5">
                             <div class="imgBox sale__chart">
                                 <img src="./assets/images/pexels-divinetechygirl-1181346 1.png" alt="">
@@ -80,7 +116,7 @@
                                 forward-thinking solutions that drive results.</p>
                         </div>
                     </div>
-                    <div class="row py-5 g-4 align-items-center justify-content-between">
+                    <div class="row">
                         <div class="col-lg-5">
                             <h1>Our Mission: Smarter, Better, Game-Changing</h1>
                             <p>At Lumis Pro Consulting, we collaborate with tech-forward firms to build smarter, better
@@ -95,7 +131,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row py-5 flex-wrap-reverse g-4 align-items-center justify-content-between">
+                    <div class="row flex-wrap-reverse">
                         <div class="col-lg-5">
                             <div class="imgBox sale__chart">
                                 <img src="./assets/images/pexels-kindelmedia-7688336 1.png" alt="">
@@ -218,43 +254,7 @@
             </div>
 
         </footer>
-        <div class="menu__ bg__" id="menu__">
-            <div class="container">
-                <div class="position-relative d-flex py-5 align-items-center justify-content-center">
-                    <div class="menu__link"><a href="#" onclick="closeMenu()">Close</a></div>
-                    <div class="logo__ imgBox">
-                        <a href="./index.html">
-                            <img src="./assets/images/logo.png" alt="logo"></a>
-                    </div>
-                </div>
-                <div class="menu__links">
-                    <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./Get-To-Know-Us.html">Get to know us</a></li>
-                        <li><a href="./our-philosophy.html" class="active">OUR PHILOSOPHY IN ACTION</a></li>
-                        <li><a href="./strategic.html">STRATEGIC PLANNING & ADVISORY</a></li>
-                        <li><a href="./Mergers.html">Mergers and Acquisitions</a></li>
-                        <li><a href="./Business-continuity.html">Business Continuity and Risk Management</a></li>
-                        <li><a href="./contact-us.html">get in touch</a></li>
-                    </ul>
-                    <div class="menu__details row py-4 g-4 align-items-center justify-content-between">
-                        <div class="col-md-5">
-                            <h6>Address:</h6>
-                            <a href="#">XCOMPANYADDRESSX</a>
-                        </div>
-                        <div class="col-md-5">
-                            <h6>Email:</h6>
-                            <a href="#">abcd@gmail.com</a>
-                        </div>
-
-                    </div>
-                </div>
-
-
-
-
-            </div>
-        </div>
+        
 
 
     </div>
