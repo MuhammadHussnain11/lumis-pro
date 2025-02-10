@@ -195,7 +195,7 @@ section,
   border-radius: 12px;
   border: none;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
   text-transform: capitalize;
 }
 button:hover {
@@ -264,6 +264,9 @@ button:hover {
 .s__box:hover {
   background-color: var(--primary-color);
   transform: scale(1.01);
+}
+.s__box p{
+  transition: all .3s ease-in-out;
 }
 .s__box:hover p {
   color: var(--primary-font-color);
@@ -573,6 +576,12 @@ h4 {
   align-items: center;
   justify-content: center;
   text-align: center;
+  transition: all .1s ease-in-out;
+}
+.method__results ul li:hover{
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  transform: scale(1.01);
 }
 .method__results ul li .imgBox,
 .our__approach ul li .imgBox,
