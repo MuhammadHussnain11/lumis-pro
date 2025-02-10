@@ -92,10 +92,16 @@
                         </div>
                         <div class="col-xl-6">
                             <form action="">
-                                <input type="text" placeholder="Who's Reaching Out?">
-                                <input type="text" placeholder="What's On Your Mind?">
-                                <input type="email" name="email" id="email" placeholder="Your Best Contact Email" >
-                                <textarea name="message" id="message"placeholder="Tell Us a Bit More"></textarea>
+                                <input type="text" list="datalistOptions" id="exampleDataList" placeholder="Who's Reaching Out?" required>
+                                <datalist id="datalistOptions">
+                                    <option value="Facebook">
+                                    <option value="Twitter">
+                                    <option value="LinkedIn">
+                                    <option value="Instagram">
+                                  </datalist>
+                                <input type="text" placeholder="What's On Your Mind?" required>
+                                <input type="email" name="email" id="email" placeholder="Your Best Contact Email" required>
+                                <textarea name="message" id="message"placeholder="Tell Us a Bit More" required></textarea>
                                 <button class="btn1" type="submit">Submit</button>
                             </form>
                         </div>

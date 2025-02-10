@@ -82,6 +82,11 @@ section,
 .banner__ .heading__ {
   padding: 48px 0;
 }
+@keyframes blink{
+  50%{
+    opacity: .5;
+  }
+}
 .header {
   z-index: 9999;
   position: absolute;
@@ -563,6 +568,7 @@ h4 {
   font-weight: 700;
   border: 2px solid var(--sec-color);
   background: white;
+  animation: blink 2s ease-in-out  infinite;
 }
 .method__results {
   background: rgba(255, 255, 255, 0.041);
@@ -576,7 +582,7 @@ h4 {
   align-items: center;
   justify-content: center;
   text-align: center;
-  transition: all .1s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 .method__results ul li:hover{
   box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
@@ -632,6 +638,7 @@ h4 {
 .moving__forward .imgBox {
   width: 300px;
   height: 300px;
+  animation: blink 2s ease infinite;
 }
 .our__approach ul {
   gap: 50px;
@@ -844,11 +851,17 @@ h4 {
   border-radius: 50px;
   background: #16161a;
   padding: 16px 24px;
+  transition: all 0.2s ease-in-out;
+}
+.contact__ form input:focus,
+.contact__ form textarea:focus {
+  box-shadow: 0 0 5px 5px rgba(196, 191, 191, 0.1);
 }
 .contact__ form textarea {
   height: 150px;
   border-radius: 16px;
 }
+
 /***** End contact us *****/
 @media (max-width: 567px) {
   .logo__ {
