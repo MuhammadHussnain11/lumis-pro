@@ -93,9 +93,8 @@ section,
   top: 0px;
   width: 100%;
 }
-.header__con {
+.header .row {
   position: relative;
-  display: flex;
   align-items: center;
   justify-content: center;
   padding: 3rem 0;
@@ -141,7 +140,7 @@ section,
 .banner__::after {
   content: "";
   position: absolute;
-  background: rgba(131, 67, 234, 0.267);
+  background: rgba(149, 93, 240, 0.267);
   border-radius: 50%;
   width: 800px;
   height: 800px;
@@ -252,7 +251,6 @@ button:hover {
 }
 .s__box {
   max-width: 544px;
-  height: 550px;
   padding: 32px;
   display: flex;
   flex-direction: column;
@@ -293,7 +291,7 @@ button:hover {
   background-color: var(--sec-color);
 }
 .s__box__2 {
-  height: 600px;
+  gap: 80px;
 }
 
 .s__box .icon__ {
@@ -390,6 +388,9 @@ button:hover {
   border-top: 1px solid #8d8d9934;
   padding: 10px 0;
   text-align: center;
+  p{
+    margin: 0;
+  }
 }
 a:hover:not(.logo__ a, .menu__links li a) {
   opacity: 0.7;
@@ -480,23 +481,17 @@ a:hover:not(.logo__ a, .menu__links li a) {
 .principles__define ul li:nth-child(even) {
   background: var(--primary-color);
 }
-.principles__define ul li:nth-child(1) {
+.principles__define ul li:nth-child(4n+1) {
   border-radius: 40px 40px 0px 40px;
 }
-.principles__define ul li:nth-child(2) {
+.principles__define ul li:nth-child(4n+2) {
   border-radius: 40px 40px 40px 0px;
 }
-.principles__define ul li:nth-child(3) {
+.principles__define ul li:nth-child(4n+3) {
   border-radius: 40px 0px 40px 40px;
 }
-.principles__define ul li:nth-child(4) {
+.principles__define ul li:nth-child(4n) {
   border-radius: 0px 40px 40px 40px;
-}
-.principles__define ul li:nth-child(5) {
-  border-radius: 40px 40px 0px 40px;
-}
-.principles__define ul li:nth-child(6) {
-  border-radius: 40px 40px 40px 0px;
 }
 .deliver__result {
   background-image: url(../images/services-bg.png);
@@ -954,8 +949,7 @@ h4 {
   h4 {
     font-size: calc(1.1rem + 0.3vw) !important;
   }
-  .s__box,
   .s__box__2 {
-    height: auto;
+    gap: 40px;
   }
 }
