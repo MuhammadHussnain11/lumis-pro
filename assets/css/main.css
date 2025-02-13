@@ -99,7 +99,7 @@ p {
   visibility: hidden;
 }
 #back__top:hover{
-  opacity: 0.8;
+  opacity: 0.8 !important;
 }
 #back__top.active{
   transform: translateY(0%);
