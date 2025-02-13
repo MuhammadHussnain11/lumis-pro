@@ -78,6 +78,34 @@ p {
   width: 100%;
   height: auto;
 }
+#back__top{
+  all: unset;
+  width: 50px;
+  height: 40px;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--primary-color);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  transform: translateY(200%);
+  opacity: 0;
+  visibility: hidden;
+}
+#back__top:hover{
+  opacity: 0.8;
+}
+#back__top.active{
+  transform: translateY(0%);
+  opacity: 1;
+  visibility: visible;
+}
 section,
 .banner__ .heading__ {
   padding: 48px 0;

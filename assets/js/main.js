@@ -24,3 +24,20 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.5 });
 
 sections.forEach(section => observer.observe(section));
+
+// Back-to-top Button
+let backTop = document.getElementById("back__top");
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    backTop.classList.add('active');
+  } else {
+    backTop.classList.remove('active');
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
